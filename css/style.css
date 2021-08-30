@@ -51,3 +51,163 @@ select {
 a {
   text-decoration: none;
 }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  color: #242121;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #01353e;
+}
+
+.title::after {
+  content: "/";
+  position: absolute;
+  bottom: -33px;
+  right: -35px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 85px;
+  color: #00b2a0;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  /* margin-bottom: 243px; */
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  align-self: center;
+}
+
+.menu__list-item+.menu__list-item {
+  margin-left: 45px;
+}
+
+.menu__list-link {
+  padding: 0 2px 5px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  transition: all .5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #00b2a0;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 98px);
+}
+
+.header__title {
+  margin-top: auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 235px;
+  color: #0D302C;
+}
+
+.header__subtitle {
+  margin-bottom: auto;
+  padding-bottom: 57px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+
+}
+
+.header__icon {
+  margin-bottom: 92px;
+}
+
+.about {
+  padding-top: 189px;
+  padding-bottom: 169px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+  max-width: 891px;
+}
+
+.about__text {
+  max-width: 480px;
+  margin-right: 120px;
+  margin-bottom: 30px;
+}
+
+.about__text-row {
+  display: flex;
+}
+
+.school__title {
+  margin-bottom: 101px;
+  max-width: 608px;
+}
+
+.school__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school__item {
+  width: 350px;
+}
+
+.school__item-inner {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.school__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.school__item-text {
+
+}
