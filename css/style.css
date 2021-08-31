@@ -247,43 +247,16 @@ body {
 }
 
 .school__info {
-  width: 346px;
-  margin-top: 8px;
   flex: none;
+  padding-top: 8px;
+  width: 346px;
 }
 
 .school__info-item {
-  margin-bottom: 30px;
-}
-
-.school__info-scale {
-  display: flex;
-  margin-bottom: 5px;
-  
-}
-
-.school__info-wave {
-  margin-right: 10px;
   position: relative;
-}
-
-.school__info-percent {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 18px;
-  color: #242121;
-}
-
-
-.school__info-item {
-  position: relative;
-  padding: 8px 0 0;
+  padding: 5px 0 30px;
   border-top: 15px solid #fff;
-  border-image: url('../images/percent.svg');
-  border-image-slice: 15 0 0;
-  border-image-width: 1;
-  border-image-outset: 0;
-  border-image-repeat: stretch;
+  border-image: url('../images/percent.svg') 15 0 0 stretch;
 }
 
 .school__info-item span {
