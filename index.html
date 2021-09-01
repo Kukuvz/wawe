@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -188,8 +189,79 @@
       </div>
     </div>
   </section>
+  <section class="gallery">
+    <div class="container">
+      <h2 class="title gallery__title">ГАЛЕРЕЯ</h2>
+      <div class="gallery__filter-btn">
+        <button class="gallery__btn" data-filter="all">ВСЕ</button>
+        <button class="gallery__btn" data-filter=".tourist">ТУРИСТЫ</button>
+        <button class="gallery__btn" data-filter=".nature">ПРИРОДА</button>
+        <button class="gallery__btn" data-filter=".profi">ПРОФИ</button>
+      </div>
+      <div class="gallery__content">
+        <div class="gallery__item mix profi">
+          <img src="images/gallery/1.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+        <div class="gallery__item mix nature">
+          <img src="images/gallery/2.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+        <div class="gallery__item mix tourist nature">
+          <img src="images/gallery/3.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+        <div class="gallery__item mix tourist">
+          <img src="images/gallery/4.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+        <div class="gallery__item mix profi">
+          <img src="images/gallery/5.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+        <div class="gallery__item mix nature">
+          <img src="images/gallery/6.jpg" alt="gallery images">
+          <a href="#" class="gallery__item-link"></a>
+        </div>
+      </div>
+      <a class="gallery__add" href="#">ПОКАЗАТЬ ЕЩЕ</a>
+    </div>
+    <blockquote class="blockquote">
+      <p class="blockquote__text">
+        «Если сомневаешься – иди катайся.»
+        <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
+      </p>
+    </blockquote>
+    <div class="container">
+      <div class="gallery__video">
+        <a data-fancybox class="gallery__video-link" href="https://youtu.be/xk2RswSvRg4">
+          <img src="images/play.svg" alt="play icon">
+        </a>
+      </div>
+      <div class="gallery__numbers">
+        <h5 class="gallery__numbers-item">
+          450
+          <span>туристов</span>
+        </h5>
+        <h5 class="gallery__numbers-item">
+          2500
+          <span>часов катания</span>
+        </h5>
+        <h5 class="gallery__numbers-item">
+          10
+          <span>проф. тренеров</span>
+        </h5>
+        <h5 class="gallery__numbers-item">
+          365
+          <span>дней в году</span>
+        </h5>
+      </div>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
