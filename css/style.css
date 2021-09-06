@@ -854,3 +854,10 @@ ul.service-packages__item {
     font-size: 14px;
   }
 }
+
+@media (max-width: 340px) {
+  .title {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+}
