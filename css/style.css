@@ -252,28 +252,31 @@ body {
 
 .school__info {
   padding-top: 8px;
+  padding-right: 40px;
   width: 346px;
   flex: none;
 }
 
 .school__info-item {
-  display: flex;
+  position: relative;
+  padding-top: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.school__info-item img {
+  margin-bottom: 5px;
 }
 
 .school__info-item span {
-  position: relative;
-  top: -5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 8px;
   font-weight: 400;
   font-size: 24px;
   line-height: 18px;
-}
-
-.school__info-wave {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 5px 0 10px;
-  border-top: 15px solid transparent;
-  border-image: url('../images/percent.svg') 15 0 0 0;
 }
 
 .school__text {
@@ -709,6 +712,9 @@ ul.service-packages__item {
     margin-right: 90px;
     margin-left: 20px;
   }
+  .peak__inner {
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -768,6 +774,17 @@ ul.service-packages__item {
   }
   .school__text {
     margin-left: 0;
+  }
+  .peak {
+    background-image: none;
+  }
+  .peak__inner {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .peak__title {
+    margin-bottom: 50px;
   }
 }
 
