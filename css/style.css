@@ -352,10 +352,6 @@ body {
   position: relative;
 }
 
-/* .long {
-  width: 100%;
-} */
-
 .gallery__item::before {
   content: "";
   position: absolute;
@@ -847,6 +843,9 @@ ul.service-packages__item {
     right: 0;
     left: 0;
   }
+  .gallery__video {
+    height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -911,8 +910,14 @@ ul.service-packages__item {
   .peak__inner {
     padding-bottom: 0;
   }
+  .gallery__content {
+    gap: 10px;
+  }
   .gallery__item {
-    width: 48%;
+    width: 49%;
+  }
+  .gallery__item--long {
+    width: 100%;
   }
   .gallery__add {
     margin-bottom: 40px;
@@ -930,7 +935,6 @@ ul.service-packages__item {
   }
   .gallery__video {
     margin-bottom: 75px;
-    height: 300px;
   }
   .gallery__numbers {
     flex-wrap: wrap;
